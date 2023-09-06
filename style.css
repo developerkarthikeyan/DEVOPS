@@ -1,52 +1,70 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #6a52a5, #4c5f93);
+html,
+body{
+   margin: 0;
+   font-family: 'Poppins', sans-serif;
+   background-color:#f5e8ba;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
- 
+#wrapper div,#wrapper h2{
+    display:flex;
+    justify-content: center;
+    
 }
 
-.title {
-    margin: 0;
-    font-size: 24px;
-    text-align: right;
+select{
+    border-radius: 5px;
+    border: 2px solid black ;
+    margin-top:30px;
+    height:2.5em;
+    width:250px;
+    padding-left:10px;
+    
 }
 
-.input-container {
-    display: flex;
-    flex-direction: column; /* Change from 'row' to 'column' */
-    gap: 10px;
-     padding: 40px;
+
+h2{
+    color:#ffeba7;
+    letter-spacing: 1px;
+}
+input{
+    border-radius: 5px;
+    border: 2px solid black ;
+    margin-top:30px;
+    height:2em;
+    width:250px;
+    padding-left:10px;
 }
 
-.input-box {
-    margin-top: 30px;
-    width: 350px;
-    height: 30px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    animation: slideIn 0.5s ease-out;
-    border-radius: 10px;
+input:active{
+    border:none;
+}
+#wrapper{
+    height:500px;
+    width:400px;
+    margin:200px auto;
+    background-color:#1f2029;
+    border-radius:10px;
+    padding:30px;
 }
 
-@keyframes slideIn {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+button{
+    margin-top:20px;
+    background-color:#ffeba7;
+    border-radius: 4px;
+    height: 44px;
+    font-weight: 600;
+    padding: 0 30px;
+    letter-spacing: 1px;
+    border: none;
+    background-color: #ffeba7;
+    color: #102770;
 }
+
 button:hover{
-background-color: black;
-color: white;
+    cursor:pointer;
+}
+#result{
+    color:white;
+    margin-top:20px;
+    font-size:32px;
 }
